@@ -17,9 +17,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_DEVICE := X695C
-PRODUCT_NAME := lineage_X695C
+PRODUCT_NAME := arrow_X695C
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Infinix Hot 20S (X695C)
+PRODUCT_MODEL := Infinix Note 10 Pro (X695C)
 PRODUCT_MANUFACTURER := Infinix
 
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
