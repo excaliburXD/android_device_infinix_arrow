@@ -5,7 +5,6 @@
 #
 
 DEVICE_PATH := device/infinix/X695C
-VENDOR_PATH := vendor/infinix/X695C-prebuilt
 
 # Architecture
 TARGET_ARCH := arm64
@@ -87,8 +86,7 @@ BOARD_SUPER_PARTITION_ERROR_LIMIT := 6012043264
 BOARD_MAIN_PARTITION_LIST := \
     system \
     system_ext \
-    product \
-    vendor
+    product
 
 # Reserve space for gapps install
 ifneq ($(WITH_GMS),true)
@@ -118,7 +116,6 @@ BOARD_USES_METADATA_PARTITION := true
 # Prebuilts
 TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS := true
 BUILD_WITHOUT_VENDOR := true
-#BOARD_PREBUILT_VENDORIMAGE := $(VENDOR_PATH)/vendor.img
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6785
