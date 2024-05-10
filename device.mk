@@ -71,13 +71,13 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 # Bluetooth Audio (System-side HAL, sysbta)
-#PRODUCT_PACKAGES += \
-#    audio.sysbta.default \
-#    android.hardware.bluetooth.audio-service-system
+PRODUCT_PACKAGES += \
+    audio.sysbta.default \
+    android.hardware.bluetooth.audio-service-system
 
-#PRODUCT_COPY_FILES += \
-#    $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml \
-#    $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
+# PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml \
+    $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
 
 # Dexpreopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -85,8 +85,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUIGoogle
 
 # DT2W
-#PRODUCT_PACKAGES += \
-#    DT2W-Service-X695C
+PRODUCT_PACKAGES += \
+    DT2W-Service-X695C
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -97,15 +97,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
 
 # ImsInit hack
-#PRODUCT_PACKAGES += \
-#    ImsInit
+PRODUCT_PACKAGES += \
+    ImsInit
 
 # ImsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
-#    ImsServiceBase
+    ImsServiceBase
 
 # Init
 PRODUCT_PACKAGES += \
@@ -132,8 +132,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/dtb.img:dtb.img
 
 # MTK In-call service
-#PRODUCT_PACKAGES += \
-#    MtkInCallService
+PRODUCT_PACKAGES += \
+    MtkInCallService
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -141,14 +141,14 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
 
 # Runtime Resource Overlays
-#PRODUCT_PACKAGES += \
-#    FrameworksResOverlayX695C \
-#    TetheringOverlayX695C \
-#    WifiOverlayX695C \
-#    SystemUIOverlayX695C \
-#    SettingsOverlayX695C \
-#    SettingsLibOverlayX695C \
-#    SimpleDeviceConfigOverlayX695C
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayX695C \
+    TetheringOverlayX695C \
+    WifiOverlayX695C \
+    SystemUIOverlayX695C \
+    SettingsOverlayX695C \
+    SettingsLibOverlayX695C \
+    SimpleDeviceConfigOverlayX695C
 
 # Perf
 PRODUCT_COPY_FILES += \

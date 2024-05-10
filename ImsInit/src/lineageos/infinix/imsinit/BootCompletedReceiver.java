@@ -1,4 +1,4 @@
-package org.lineageos.xiaomi.imsinit;
+package org.lineageos.infinix.imsinit;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
